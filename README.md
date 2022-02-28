@@ -4,7 +4,8 @@
   <b>Key Account Manager:</b><br> Lena Georgescu  <br><br>
   <b>Chief Deliverable Officer:</b><br> Marula Bobst <br><br>
   <b>Quality Evangelist:</b><br> Florin Achermann <br><br>
-  <b>Master Tracker:</b><br> Merlin Streilein <br>
+  <b>Master Tracker:</b><br> Merlin Streilein <br> <br>
+  <b>Chief Risk Officer: </b><br> Martin Widmer<br>
  
   </p>
   
