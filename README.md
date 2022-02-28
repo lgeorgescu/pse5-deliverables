@@ -1,4 +1,4 @@
-# Deliverables for the PSE-lecture 2022 (Group 5)
+# Deliverables für die PSE-Vorlesung 2022 (Gruppe 5)
 <b></b>
 <p>
   <b>Key Account Manager:</b><br> Lena Georgescu  <br><br>
@@ -7,5 +7,9 @@
   <b>Master Tracker:</b><br> Merlin Streilein <br>
  
   </p>
+  
+  <br>
+  
+ <a href="https://trello.com/pse193/account" target="_blank"> <b>Arbeitsplan</b> </a>
 
 
