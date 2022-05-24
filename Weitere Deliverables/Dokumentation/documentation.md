@@ -46,14 +46,15 @@ The database is atleast in 3-Normalform, although it may very well be in Boyce-C
 ## Sequence Diagrams
 
 There are two main workflows in this application
+
 1. Uploading a transition file
 2. Viewing all the differences
 
 To better understand the architecture, the two following sequence diagrams should explain it a little bit.
 
 ### Transition Upload
-![transition_upload](transition_upload.png)
 
+![transition_upload](transition_upload.png)
 
 Uploading a transition with a catalog consists of several steps. The User uploads a catalog and a transition in the React Frontend (Note: For simplicity, the `ReactApp` is thought of as one class, even though it consists of several components).
 The User uploads a catalog and a transition file in the Browser. This sequence of events starts after the user clicked on "Dateien importieren" in the webapp:
@@ -63,8 +64,9 @@ The User uploads a catalog and a transition file in the Browser. This sequence o
 3. If everything was successful, the same procedure happens with the transition. Note here aswell, that this procedure is simplified in this diagram. While calculating differences, the `TransitionController` is in constant communication with the database.  
 
 ### Viewing Differences
+
 ![view_differences](view_differences.png)
 
 ## See also
 
-[Rubydoc](/doc/index.html) for documentation of all the classes
+[Rubydoc](/doc/index.html) for documentation of all the classes.
