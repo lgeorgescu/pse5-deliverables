@@ -39,7 +39,7 @@ Die Webapp muss nicht grossen Belastungen standhalten, da sie auch nur von (vora
 
 ## Usability-Test
 
-Ein Usability-Test wird mit dem Endnutzer durchgeführt.
+Ein Usability-Test wird mit dem Endnutzer durchgeführt, siehe weitere [Erklärung](#resultat-usability-test).
 
 ## Testresultate
 
@@ -55,6 +55,8 @@ Auch im Frontend werden alle Tests bestanden.
 
 In den beiden Screenshots sind alle Testsausgaben, so wie sie von den Testrunnern *RSpec* und *Jest* angezeigt werden.
 Da wir wie erwähnt mit dem Testing am Anfang ein wenig in Verzug geraten sind und wir bis dahin vor allem *sehr* viel von Hand getestet haben, haben die Tests eher das *Expected Behavior* bestätigt und gezeigt, dass das was wir von Hand getestet und so erwartet haben, auch im automatisierten Testing genau so gemacht wurde.
+
+### Resultat Usability-Test
 
 Wahrscheinlich der lehrreichste Test war tatsächlich der Usability Test:
 
