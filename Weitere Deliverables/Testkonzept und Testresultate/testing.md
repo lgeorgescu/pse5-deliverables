@@ -46,12 +46,12 @@ Ein Usability-Test wird mit dem Endnutzer durchgeführt, siehe weitere [Erkläru
 Zu den Testresultaten gibt es nicht allzu viel zu sagen.
 
 Die Tests im Backend sind alle erfolgreich.
-![result1](/Testresultate/result1.png)
-![result2](/Testresultate/result2.png)
+![result1](./Testresultate/result1.png)
+![result2](./Testresultate/result2.png)
 
 Auch im Frontend werden alle Tests bestanden.
 
-![result3](/Testresultate/result3.png)
+![result3](./Testresultate/result3.png)
 
 In den beiden Screenshots sind alle Testsausgaben, so wie sie von den Testrunnern *RSpec* und *Jest* angezeigt werden.
 Da wir wie erwähnt mit dem Testing am Anfang ein wenig in Verzug geraten sind und wir bis dahin vor allem *sehr* viel von Hand getestet haben, haben die Tests eher das *Expected Behavior* bestätigt und gezeigt, dass das was wir von Hand getestet und so erwartet haben, auch im automatisierten Testing genau so gemacht wurde.
