@@ -21,3 +21,9 @@ Die Datenbank perse wird in unserem Produkt nicht getested, wir haben automated 
 Wir haben mit dem Kunden abgemacht, dass wir die Feature Tests auf das Hochladen eines Katalogs und Transition File beschränken.
 
 Die Feature Tests werden mit RSpec und Headless Chrome gemacht. Headless Chrome simuliert hierbei einen Webbrowser und automatisiert so z.B. dass Hochladen eines Files.
+
+## Useability-Test
+
+Anschliessend an das Kundenmeeting der 4.Iteration haben wir einen Useability-Test mit dem Kunden geplant.
+Da unsere Application am Schluss Hauptsächlich von einer Person benutzt wird, haben wir den Useability gerade mit ihr druchgeführt.
+Wir haben uns mit der Endnutzerin vor einen fast fertigen Built der Application gesetzt und sie die Usecases durchspielen lassen. Es wurde schnell ersichtlich, dass es einige Punkte gab welche nicht in den vorherigen Meetings vom Kunden spezifiziert wurden. Dabei handelte es sich jedoch nur um kleine Änderungen, welche innerhalb einer Stunde implementiert waren. Der Useability-Test zeigte uns, dass es einen Unterschied macht ob man die Sicht eines Developers oder eines potenziellen Endnutzer hat. So war zum Beispiel die Ungeduldigkeit bei Ladezeiten ein Punkt, welchen wir mit einem Spinner als UserFeedback beheben konnten.
