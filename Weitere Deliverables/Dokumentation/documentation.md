@@ -16,7 +16,7 @@ We have two subclasses of the ApplicationController, the base controller class.
 The `catalogController` is responsible for everything concerning Catalogs and Chops.
 
 * `approveUpload` validates if an incoming catalog is eligible to be inserted into the database
-* `countChops``` returns the amount of valid Chop-Codes in the database for a given year.
+* `countChops` returns the amount of valid Chop-Codes in the database for a given year.
 * `create` parses a catalog `.csv` and creates all Chop-Code entries in the database. This method should only be called if `approveUpload` returned Status Code `200`.
 
 The `TransitionController` is responsible for everything concerning uploading a transition file and displaying differences between catalogs.
@@ -42,3 +42,29 @@ The following schema represents our database schema. Note here how there are sep
 ![database_schema](DB_Schema.png)
 
 The database is atleast in 3-Normalform, although it may very well be in Boyce-Codd-Normalform (not thoroughly checked), because there are almost no functional dependencies.
+
+## Sequence Diagrams
+
+There are two main workflows in this application
+1. Uploading a transition file
+2. Viewing all the differences
+
+To better understand the architecture, the two following sequence diagrams should explain it a little bit.
+
+### Transition Upload
+![transition_upload](transition_upload.png)
+
+
+Uploading a transition with a catalog consists of several steps. The User uploads a catalog and a transition in the React Frontend (Note: For simplicity, the `ReactApp` is thought of as one class, even though it consists of several components).
+The User uploads a catalog and a transition file in the Browser. This sequence of events starts after the user clicked on "Dateien importieren" in the webapp:
+
+1. `ReactApp` first asks if the uploaded catalog is valid for insertion into the database.
+2. If it's valid, it sends the catalog to the `CatalogController` and the `CatalogController` parses and inserts the Catalog into the database. This is done using `ActiveRecord`. (Again, note here that `ActiveRecord` is reponsible for talking to the database)
+3. If everything was successful, the same procedure happens with the transition. Note here aswell, that this procedure is simplified in this diagram. While calculating differences, the `TransitionController` is in constant communication with the database.  
+
+### Viewing Differences
+![view_differences](view_differences.png)
+
+## See also
+
+[Rubydoc](/doc/index.html) for documentation of all the classes
