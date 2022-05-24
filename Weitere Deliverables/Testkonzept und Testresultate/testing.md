@@ -21,3 +21,26 @@ TODO
 Wir haben mit dem Kunden abgemacht, dass wir die Feature Tests auf das Hochladen eines Katalogs und Transition File beschränken.
 
 Die Feature Tests werden mit RSpec und Headless Chrome gemacht. Headless Chrome simuliert hierbei einen Webbrowser und automatisiert so z.B. dass Hochladen eines Files.
+
+## Installationstest
+
+Da es bei uns bei der Installation keine Probleme gegeben hat, und dass Produkt am Schluss sowieso auf einem Linuxbetriebssystem genutzt wird, mussten wir hier nichts weiter testen. Die Installationsanweisungen im [README](../Produkt/README.md) sind vollständig und verständlich.
+
+## GUI Tests
+
+Die Funktionalität des GUIs wurde bereits in den [Feature Tests](#integration-tests--feature-tests) getested. Das visuelle des GUIs wird von Hand getestet. Da es nicht sonderlich gross ist, sollte dies auch reichen.
+
+## Stress Tests
+
+Die Webapp muss nicht grossen Belastungen standhalten, da sie auch nur von (voraussichtlich) einer einzigen Person benutzt wird. Das einzige Bottleneck ist das Hochladen eines Transitionfile. Dies dauert ca. 2 Minuten. Als Nutzer muss man hier also kurz warten. Dieses Verhalten ist okay, da dies nur einmal pro Jahr gemacht werden muss.
+
+# Testresultate
+
+Die Tests im Backend sind alle erfolgreich.
+![result1](/Testresultate/result1.png)
+![result2](/Testresultate/result2.png)
+
+Auch im Frontend werden alle Tests bestanden.
+
+![result3](/Testresultate/result3.png)
+
