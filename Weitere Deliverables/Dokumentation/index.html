@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.9.27
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'>
+<h1 id="label-SwissDRG+PSE-Projekt+FS2022+-F0-9F-9A-81">SwissDRG PSE-Projekt FS2022 🚁</h1>
+
+<p>Compare and review the differences in two chop catalogs.</p>
+
+<p>Chopdiff is a web-based application to visualise and review the differences between two chop code catalogs of two years. It allows the user to upload catalogs and transitions and calculates the differences and furthermore visualises the differences from one year to the following.</p>
+
+<h2 id="label-Versions">Versions</h2>
+<ul><li>
+<p>Ruby: 3.0.2</p>
+</li><li>
+<p>Postgres: =&gt; 12</p>
+</li></ul>
+<hr>
+
+<h2 id="label-Setup">Setup</h2>
+
+<p>Installing rails and all other Gems:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_bundle'>bundle</span> <span class='id identifier rubyid_install'>install</span>
+</code></pre>
+
+<p>Installing react and other js libraries</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_yarn'>yarn</span> <span class='id identifier rubyid_install'>install</span>
+</code></pre>
+
+<p>Creating the database</p>
+
+<p>First, create a database user (“role”) in Postgresql:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_sudo'>sudo</span> <span class='id identifier rubyid_su'>su</span> <span class='id identifier rubyid_postgres'>postgres</span>
+<span class='id identifier rubyid_psql'>psql</span>
+</code></pre>
+
+<p>Then in psql:</p>
+
+<pre class="code ruby"><code class="ruby">CREATE ROLE chopdiff PASSWORD &#39;chopdiff&#39;  CREATEDB  LOGIN;`
+</code></pre>
+
+<p>Then, edit your <code>.env</code> file so it contains username and password of the user you just created. You can find a <code>.env.example</code> file in the repo which templates the used ENV variables.</p>
+
+<p><code>.env</code>:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='comment'># add local postgres user creds here 
+</span><span class='const'>LOCAL_DB_USER</span><span class='op'>=</span><span class='id identifier rubyid_yourUsernameHere'>yourUsernameHere</span>
+<span class='const'>LOCAL_DB_PW</span><span class='op'>=</span><span class='id identifier rubyid_yourPasswordHere'>yourPasswordHere</span>
+</code></pre>
+
+<p>Now, you can create the database:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_rails'>rails</span> <span class='label'>db:</span><span class='id identifier rubyid_create'>create</span>
+</code></pre>
+
+<p>You should now be ready to run the application locally.</p>
+<hr>
+
+<h2 id="label-Running+the+application">Running the application</h2>
+
+<pre class="code ruby"><code class="ruby">./bin/dev
+</code></pre>
+
+<p>If you&#39;re using <code>rbenv</code>, don&#39;t forget to <code>rbenv rehash</code> to make sure installed gems are found by ruby.</p>
+<hr>
+
+<h2 id="label-Testing">Testing</h2>
+
+<h3 id="label-Backend">Backend</h3>
+
+<p>Running all Backend-Tests with</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_rspec'>rspec</span>
+</code></pre>
+
+<p>or run a specific test</p>
+
+<pre class="code ruby"><code class="ruby">rspec spec\path\to\test.rb
+</code></pre>
+
+<p>and add <code>--format documentation</code> if more output info is desired.</p>
+
+<pre class="code ruby"><code class="ruby">rspec spec --format documentation
+</code></pre>
+
+<p>To properly run the Tests psql will need admin rights to your test-database, these rights can be given with</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_alter'>alter</span> <span class='id identifier rubyid_user'>user</span> <span class='id identifier rubyid_chopdiff'>chopdiff</span> <span class='id identifier rubyid_with'>with</span> <span class='id identifier rubyid_superuser'>superuser</span>
+</code></pre>
+
+<p>in the psql interface of the chopdiff_test database (access it with <code>psql chopdiff_test</code>).</p>
+
+<p>Another useful command if some of the tests fail because the database is empty is</p>
+
+<pre class="code ruby"><code class="ruby">RAILS_ENV=test FIXTURES_PATH=&quot;spec/fixtures&quot; rails db:fixtures:load
+</code></pre>
+
+<p>to load the test database with the fixtures data.</p>
+
+<p>—</p>
+
+<h3 id="label-Frontend">Frontend</h3>
+
+<p>Frontend testing is done via the Jest framework.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_yarn'>yarn</span> <span class='id identifier rubyid_test'>test</span>
+</code></pre>
+
+<p>to run all frontend test suites and</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_yarn'>yarn</span> <span class='id identifier rubyid_test'>test</span> <span class='id identifier rubyid_nameoftestfile'>nameoftestfile</span>
+</code></pre>
+
+<p>to test one specific test.</p>
+
+<h2 id="label-Deploying">Deploying</h2>
+
+<p>Describe deploying here</p>
+</div></div>
+
+      <div id="footer">
+  Generated on Sun May 22 18:37:29 2022 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.27 (ruby-3.0.2).
+</div>
+
+    </div>
+  </body>
+</html>
