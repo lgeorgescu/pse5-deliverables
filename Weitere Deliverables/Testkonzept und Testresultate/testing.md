@@ -2,6 +2,9 @@
 
 Unser Team startete sehr zurückhaltend in das Testing, wir wollten von Anfang an einen grossen Fokus auf das Testing legen, jedoch nahm die Implementation von Features und das Einarbeiten in die neuen Technologien viel Zeit in Anspruch nahm. Nach dem Einrichten der Testing Frameworks Jest und Rspec verlief das Testing ohne grössere Probleme.
 
+Das Konzept orientiert sich an der Testing Pyramide, welches wir bei Zühlke gelernt haben.
+![testing_pyramid](/Testresultate/testing_pyramid.png)
+
 ## Unit Tests
 
 Im Backend werden als Unit Tests vor allem die Controller und Models getestet. Dies soll sicher stellen, dass die Interaktion zwischen Frontend und Datenbank wie erwartet abläuft und auch die Datenbankmodelle den Vorstellungen entsprechen. So werden zum Beispiel Grenzfälle und Foreign-Constraints der Datenbank in den Modell Test geprüft oder upload Responses und preconditions an die Daten aus dem Frontend in den Controller Tests überprüft.
@@ -34,13 +37,13 @@ Die Funktionalität des GUIs wurde bereits in den [Feature Tests](#integration-t
 
 Die Webapp muss nicht grossen Belastungen standhalten, da sie auch nur von (voraussichtlich) einer einzigen Person benutzt wird. Das einzige Bottleneck ist das Hochladen eines Transitionfile. Dies dauert ca. 2 Minuten. Als Nutzer muss man hier also kurz warten. Dieses Verhalten ist okay, da dies nur einmal pro Jahr gemacht werden muss.
 
-## Useability-Test
+## Usability-Test
 
-Anschliessend an das Kundenmeeting der 4.Iteration haben wir einen Useability-Test mit dem Kunden geplant.
-Da unsere Application am Schluss Hauptsächlich von einer Person benutzt wird, haben wir den Useability gerade mit ihr druchgeführt.
-Wir haben uns mit der Endnutzerin vor einen fast fertigen Built der Application gesetzt und sie die Usecases durchspielen lassen. Es wurde schnell ersichtlich, dass es einige Punkte gab welche nicht in den vorherigen Meetings vom Kunden spezifiziert wurden. Dabei handelte es sich jedoch nur um kleine Änderungen, welche innerhalb einer Stunde implementiert waren. Der Useability-Test zeigte uns, dass es einen Unterschied macht ob man die Sicht eines Developers oder eines potenziellen Endnutzer hat. So war zum Beispiel die Ungeduldigkeit bei Ladezeiten ein Punkt, welchen wir mit einem Spinner als UserFeedback beheben konnten.
+Ein Usability-Test wird mit dem Endnutzer durchgeführt.
 
 ## Testresultate
+
+Zu den Testresultaten gibt es nicht allzu viel zu sagen.
 
 Die Tests im Backend sind alle erfolgreich.
 ![result1](/Testresultate/result1.png)
@@ -50,3 +53,11 @@ Auch im Frontend werden alle Tests bestanden.
 
 ![result3](/Testresultate/result3.png)
 
+In den beiden Screenshots sind alle Testsausgaben, so wie sie von den Testrunnern *RSpec* und *Jest* angezeigt werden.
+Da wir wie erwähnt mit dem Testing am Anfang ein wenig in Verzug geraten sind und wir bis dahin vor allem *sehr* viel von Hand getestet haben, haben die Tests eher das *Expected Behavior* bestätigt und gezeigt, dass das was wir von Hand getestet und so erwartet haben, auch im automatisierten Testing genau so gemacht wurde.
+
+Wahrscheinlich der lehrreichste Test war tatsächlich der Usability Test:
+
+Anschliessend an das Kundenmeeting der 4.Iteration haben wir einen Usability-Test mit dem Kunden geplant.
+Da unsere Application am Schluss hauptsächlich von einer Person benutzt wird, haben wir den Usability gerade mit ihr durchgeführt.
+Wir haben uns mit der Endnutzerin vor einem fast fertigen Build der Application gesetzt und sie die Usecases durchspielen lassen. Es wurde schnell ersichtlich, dass es einige Punkte gab, welche nicht in den vorherigen Meetings vom Kunden spezifiziert wurden. Dabei handelte es sich jedoch nur um kleine Änderungen, welche innerhalb einer Stunde implementiert waren. Der Usability-Test zeigte uns, dass es einen Unterschied macht ob man die Sicht eines Developers oder eines potenziellen Endnutzer hat. So war zum Beispiel die Ungeduldigkeit bei Ladezeiten ein Punkt, welchen wir mit einem Spinner als UserFeedback beheben konnten.
