@@ -4,7 +4,7 @@ Unser Team startete sehr zurückhaltend in das Testing, wir wollten von Anfang a
 
 ## Unit Tests
 
-Im Backend werden als Unit Tests vor allem die Models getestet. Dies soll sicher stellen, dass keine invaliden Daten in die Datenbanken gefüllt werden.
+Im Backend werden als Unit Tests vor allem die Controller und Models getestet. Dies soll sicher stellen, dass die Interaktion zwischen Frontend und Datenbank wie erwartet abläuft und auch die Datenbankmodelle den Vorstellungen entsprechen. So werden zum Beispiel Grenzfälle und Foreign-Constraints der Datenbank in den Modell Test geprüft oder upload Responses und preconditions an die Daten aus dem Frontend in den Controller Tests überprüft.
 
 Im Frontend wird mit den Unit Tests getestet, ob
 
@@ -14,7 +14,7 @@ Im Frontend wird mit den Unit Tests getestet, ob
 
 ## Datenbank Tests
 
-TODO
+Die Datenbank perse wird in unserem Produkt nicht getested, wir haben automated Unit Tests der Modelle auf welchen die Datenbank basiert geschrieben. Diese stellen sicher, dass keine ungültige Daten in die Datenbanken gefüllt werden.
 
 ## Integration Tests / Feature Tests
 
