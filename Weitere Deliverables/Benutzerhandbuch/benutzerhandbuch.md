@@ -2,21 +2,21 @@
 
 ## Dateien Importieren
 
-### Nur Kalender Hochladen
-Dieser Schritt ist nur notwendig, wenn noch kein Kalender vom alten Jahr vorhanden ist. Das ist der Fall, wenn die Applikation zum ersten Mal benutzt wird, in den darauffolgenden Jahren kann dieser Schritt übersprungen werden und direkt ein Kalender und Transitionfile hochgeladen werden.
+### Nur Katalog Hochladen
+Dieser Schritt ist nur notwendig, wenn noch kein Katalog vom alten Jahr vorhanden ist. Das ist der Fall, wenn die Applikation zum ersten Mal benutzt wird, in den darauffolgenden Jahren kann dieser Schritt übersprungen werden und direkt ein Katalog und Transitionfile hochgeladen werden.
 
-Um ausschliesslich den Kalender des letzten Jahres hochzuladen, muss "+ Dateien Importieren" angeklickt werden. Es erscheint nun ein Popup mit einem Eingabefeld für das Jahr des Katalogs. Hier muss das alte Jahr eingegeben werden. Darunter kann nun der alte Katalog ausgewählt werden, dieser muss in einem .csv Format sein. Wir wollen keine Überleitung hochladen, darum wird das Feld "Nur Katalog hochladen" ausgewählt. Über den Button "Dateien importieren" kann der Katalog jetzt hochgeladen werden. Dies kann einige Sekunden dauern.
-![](C:\Users\marti\Documents\Git\pse5-deliverables\Weitere Deliverables\Benutzerhandbuch\Nur_Kalender_Hochladen.png)
+Um ausschliesslich den Katalog des letzten Jahres hochzuladen, muss "+ Dateien Importieren" angeklickt werden. Es erscheint nun ein Popup mit einem Eingabefeld für das Jahr des Katalogs. Hier muss das alte Jahr eingegeben werden. Darunter kann nun der alte Katalog ausgewählt werden, dieser muss in einem .csv Format sein. Wir wollen keine Überleitung hochladen, darum wird das Feld "Nur Katalog hochladen" ausgewählt. Über den Button "Dateien importieren" kann der Katalog jetzt hochgeladen werden. Dies kann einige Sekunden dauern.
+![](C:\Users\marti\Documents\Git\pse5-deliverables\Weitere Deliverables\Benutzerhandbuch\Nur_Katalog_Hochladen.png)
 
-### Kalender und Transitionfile hochladen
+### Katalog und Transitionfile hochladen
 
-Um einen Kalender und ein Transitionfile hochzuladen, muss "+ Dateien importieren" angeklickt werden. Es erscheint nun ein Popup mit einem Eingabefeld für das Jahr des Katalogs. Hier muss das neue Jahr eingegeben werden. Darunter wird über "+ Datei" der Neue Katalog ausgewählt. Dieser muss in einem .csv Format sein. Auf die selbe Weise muss jetzt das Transitionfile in einem .xslx Format ausgewählt werden. Über den Button "Dateien importieren" werden die Dateien hochgeladen. Dies kann mehr als eine Minute dauern.
+Um einen Katalog und ein Transitionfile hochzuladen, muss "+ Dateien importieren" angeklickt werden. Es erscheint nun ein Popup mit einem Eingabefeld für das Jahr des Katalogs. Hier muss das neue Jahr eingegeben werden. Darunter wird über "+ Datei" der neue Katalog ausgewählt. Dieser muss in einem .csv Format sein. Auf die selbe Weise muss jetzt das Transitionfile in einem .xslx Format ausgewählt werden. Über den Button "Dateien importieren" werden die Dateien hochgeladen. Dies kann mehr als eine Minute dauern.
 
-![](C:\Users\marti\Documents\Git\pse5-deliverables\Weitere Deliverables\Benutzerhandbuch\Kalender_und_Transitionfile_hochladen.png)
+![](C:\Users\marti\Documents\Git\pse5-deliverables\Weitere Deliverables\Benutzerhandbuch\Katalog_und_Transitionfile_hochladen.png)
 
 ### Katalog oder Transition löschen
 
-Bereits hochgeladene Kataloge können nicht gelöscht werden, es ist aber möglich diese zu überschreiben indem ein neuer Katalog desselben Jahres hochgeladen wird. Diese Aktion ist sehr gefährlich, da bestehende Kommentare und somit Arbeit verloren gehen können. Um bestehende Kataloge oder Transitions zu löschen sollte darum ein Systemadministrator beigezogen werden.
+Bereits hochgeladene Kataloge können nicht gelöscht werden, es ist aber möglich diese zu überschreiben, indem ein neuer Katalog desselben Jahres hochgeladen wird. Diese Aktion ist sehr gefährlich, da bestehende Kommentare und somit Arbeit verloren gehen können. Um bestehende Kataloge oder Transitions zu löschen, sollte darum ein Systemadministrator beigezogen werden.
 
 #### Welche Daten gehen verloren wenn ein Katalog überschrieben wird?
 
