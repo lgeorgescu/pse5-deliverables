@@ -20,7 +20,7 @@ Bereits hochgeladene Kataloge können nicht gelöscht werden, es ist aber mögli
 
 #### Welche Daten gehen verloren wenn ein Katalog überschrieben wird?
 
-Jede Transition ist vom alten und vom neuen Katalog abhängig und wird gelöscht, wenn einer der beiden Kataloge gelöscht oder überschrieben wird. Wenn der Katalog von 2020 überschrieben wird, werden sowohl die Transition 2019-2020 als auch 2020-2021 mit allen ihren Kommentaren gelöscht.
+Jede Transition ist vom alten und vom neuen Katalog abhängig und wird gelöscht, wenn einer der beiden Kataloge überschrieben wird. Wenn der Katalog von 2020 überschrieben wird, werden sowohl die Transition 2019-2020 als auch 2020-2021 mit allen ihren Kommentaren gelöscht.
 
 ## Übersicht Navigation
 
@@ -35,7 +35,7 @@ Jede Transition ist vom alten und vom neuen Katalog abhängig und wird gelöscht
 
 ![](C:\Users\marti\Documents\Git\pse5-deliverables\Weitere Deliverables\Benutzerhandbuch\Differenzen_sortieren_und_filtern.png)
 
-Alle Differenzen werden sind einer Kategorie zugeordnet (z.B. "Titelerweiterung"). Mit einem Klick auf den Pfeil (1) kann eine Kategorie aufgeklappt werden. Bei Kategorien mit vielen Differenzen, kann dabei eine kleine Ladezeit geben. Bei (2) kann ausgewählt werden wie die Differenzen innerhalb der Kategorie sortiert werden sollen. Mit der Option Status werden alle roten Differenzen zuoberst angezeigt.
+Alle Differenzen werden sind einer Kategorie zugeordnet (z.B. "Titelerweiterung"). Mit einem Klick auf den Pfeil (1) kann eine Kategorie aufgeklappt werden. Bei Kategorien mit vielen Differenzen, kann dabei eine kleine Ladezeit geben. Bei (2) kann ausgewählt werden, wie die Differenzen innerhalb der Kategorie sortiert werden sollen. Mit der Option Status werden alle roten Differenzen zuoberst angezeigt.
 
 Mit einem Klick auf "+ Filter Hinzufügen" (3) können die Differenzen gefiltert werden. 
 
@@ -53,8 +53,8 @@ Mit einem Klick auf den Pfeil (1) kann eine Differenz ausgeklappt werden, wodurc
 
 ![](C:\Users\marti\Documents\Git\pse5-deliverables\Weitere Deliverables\Benutzerhandbuch\Differenz_ausgeklappt.png)
 
-Jetzt ist der neue und der alte Text des Chops sichtbar. Auf der linken Seite wird der neue Chop dargestellt. Dabei sind alle Textstellen welche nicht im alten Chop vorkommen grün markiert (1). Auf der Rechten Seite ist der alte Chop. Alle Textstellen welche nicht mehr im neuen Chop vorhanden sind werden sind rot markiert (2).
+Jetzt ist der neue und der alte Text des Chops sichtbar. Auf der linken Seite wird der neue Chop dargestellt. Dabei sind alle Textstellen welche nicht im alten Chop vorkommen grün markiert (1). Auf der rechten Seite ist der alte Chop. Alle Textstellen welche nicht mehr im neuen Chop vorhanden sind werden sind rot markiert (2).
 
 Im Kommentarfeld (3) kann ein beliebiger Kommentar zu dieser Differenz angegeben werden. Dieser wird erst mit dem Button "Speichern" (4) gespeichert. 
 
-Im Statuspunkt (4) wird der Status der Differenz angezeigt. Dabei sind die Farben gelb, grün und rot möglich. Der Status kann verändert werden, indem auf den Punkt geklickt wird. Ein gelber Status wird durch ein einmaliges Klicken grün. Sollte er auf rot gestellt werden, muss noch ein weiteres Mal geklickt werden. Durch einen dritten Klick, wird der Status wieder gelb.
+Im Statuspunkt (5) wird der Status der Differenz angezeigt. Dabei sind die Farben gelb, grün und rot möglich. Der Status kann verändert werden, indem auf den Punkt geklickt wird. Ein gelber Status wird durch ein einmaliges Klicken grün. Sollte er auf rot gestellt werden, muss noch ein weiteres Mal geklickt werden. Durch einen dritten Klick, wird der Status wieder gelb.
